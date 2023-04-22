@@ -6,6 +6,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /*prevent selection*/
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 body {
     height: 100%;
@@ -16,7 +21,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-main {
+main{
     color: #fff;
     font-family: 'Inconsolata', monospace;
     text-align: center;
@@ -66,7 +71,7 @@ only screen and (max-height: 600px){
     }
 
     .bio {
-        height: 100vh;
+        height: 55vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -74,7 +79,7 @@ only screen and (max-height: 600px){
     }
 
     .other {
-        height: 100vh;
+        height: 50vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
