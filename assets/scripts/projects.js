@@ -15,7 +15,7 @@ const Projects = [
 				link: 'https://github.com/Allerito/Password_Generator/blob/main/main.py'
 			}
 		],
-        img: 'https://media.discordapp.net/attachments/872913652171300875/1087142768612221139/image.png?width=1214&height=682'
+        //img: 'https://media.discordapp.net/attachments/872913652171300875/1087142768612221139/image.png?width=1214&height=682'
 	},
 	{
 		title: 'Project Hevinia',
