@@ -7,7 +7,7 @@ const desc = [
 	"Usually my code is a little buggy, but I'll update it until it works.",
 ]
 
-const startPhrase = "Hey I'm Ruben Allera or Allerito. ";
+const startPhrase = "Hey I'm Ruben Allera aka Allerito. ";
 const period = 2000;
 const element = document.getElementById("desc");
 

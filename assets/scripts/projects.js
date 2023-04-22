@@ -1,41 +1,43 @@
 const Projects = [
 	{
-		title: 'Password Generator',
-		description: 'A password generator application made in python',
+		title: "Password Generator",
+		description: "A password generator application made in python, it allows to randomly generate a password where the user can choose which characters wants, when the password is generated it'll be automatically copied in user clipboard.",
 		
 		links: [
 			{
-				name: 'GitHub',
-				icon: 'https://skillicons.dev/icons?theme=dark&i=github',
-				link: 'https://github.com/Allerito/Password_Generator'
+				name: "GitHub",
+				icon: "https://skillicons.dev/icons?theme=dark&i=github",
+				link: "https://github.com/Allerito/Password_Generator",
 			},
 			{
-				name: 'Download',
-				icon: 'https://skillicons.dev/icons?theme=dark&i=py',
-				link: 'https://github.com/Allerito/Password_Generator/blob/main/main.py'
+				name: "Download",
+				icon: "https://skillicons.dev/icons?theme=dark&i=py",
+				link: "https://github.com/Allerito/Password_Generator/blob/main/main.py",
 			}
 		],
-        //img: 'https://media.discordapp.net/attachments/872913652171300875/1087142768612221139/image.png?width=1214&height=682'
+        img: "https://media.discordapp.net/attachments/842649255608975360/1099461452533878884/PasswordGenerator.png",
 	},
 	{
-		title: 'Project Hevinia',
-		description: 'Developed by a group of schoolmates, this 2D platformer game represents the hard work and creativity of its developers. Unfortunately, for various reasons, the game will never be released. In the game, players would have controlled a character on a journey through various environments, facing challenging obstacles and enemies along the way.',
+		title: "Project Hevinia",
+		description: "Developed by a group of schoolmates, this 2D platformer game represents the hard work and creativity of its developers. Unfortunately, for various reasons, the game will never be released. In the game, players would have controlled a character on a journey through various environments, facing challenging obstacles and enemies along the way.",
 		links: [
             {
-                name: 'language',
-                icon: 'https://skillicons.dev/icons?theme=dark&i=cs',
+                name: "C#",
+                icon: "https://skillicons.dev/icons?theme=dark&i=cs",
+				link: "https://learn.microsoft.com/en-us/dotnet/csharp/",
             },
             {
-                name: 'tool',
-                icon: 'https://skillicons.dev/icons?theme=dark&i=unity',
+                name: "Unity",
+                icon: "https://skillicons.dev/icons?theme=dark&i=unity",
+				link: "https://unity.com/"
             },
             {
-                name: 'GitHub',
-                icon: 'https://skillicons.dev/icons?theme=dark&i=github',
-                link: 'https://github.com/LotoGames'
+                name: "GitHub",
+                icon: "https://skillicons.dev/icons?theme=dark&i=github",
+                link: "https://github.com/LotoGames",
             }
         ],
-		img: 'https://media.discordapp.net/attachments/872913652171300875/1087142768612221139/image.png?width=1214&height=682'
+		img: "https://media.discordapp.net/attachments/842649255608975360/1099461698953424966/ProjectHevinia.png?width=1194&height=671",
 	},
 ]
 
