@@ -3,7 +3,7 @@ const desc = [
 	"My hobbies are gaming, coding and improve myself.",
 	"I really like understanding how things work, but at the same time I love creating things for others to understand.",
 	"I'm convinced that creating is the best way to tell about yourself.",
-	"If you have suggestions to improve me, please contact me.",
+	"If you have suggestions to improve myself, please contact me.",
 	"Usually my code is a little buggy, but I'll update it until it works.",
 ]
 
