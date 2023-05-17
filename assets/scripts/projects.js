@@ -5,14 +5,14 @@ const Projects = [
 		
 		links: [
 			{
-				name: "GitHub",
-				icon: "https://skillicons.dev/icons?theme=dark&i=github",
-				link: "https://github.com/Allerito/Password_Generator",
+				name: "Python",
+				icon: "https://skillicons.dev/icons?theme=dark&i=py",
+				link: "https://docs.python.org/3/",
 			},
 			{
-				name: "Download",
-				icon: "https://skillicons.dev/icons?theme=dark&i=py",
-				link: "https://github.com/Allerito/Password_Generator/blob/main/main.py",
+				name: "Github",
+				icon: "https://skillicons.dev/icons?theme=dark&i=github",
+				link: "https://github.com/Allerito/Password_Generator",
 			}
 		],
         img: "https://media.discordapp.net/attachments/842649255608975360/1099461452533878884/PasswordGenerator.png",
@@ -37,7 +37,24 @@ const Projects = [
                 link: "https://github.com/LotoGames",
             }
         ],
-		img: "https://media.discordapp.net/attachments/842649255608975360/1099461698953424966/ProjectHevinia.png?width=1194&height=671",
+		img: "https://media.discordapp.net/attachments/842649255608975360/1099461698953424966/ProjectHevinia.png",
+	},
+	{
+		title: "Account Manager",
+		description: "An account manager application made in python, it allows to saving your accounts information on your local pc",
+		links: [
+            {
+				name: "Python",
+				icon: "https://skillicons.dev/icons?theme=dark&i=py",
+				link: "https://docs.python.org/3/",
+			},
+			{
+				name: "Download",
+				icon: "https://skillicons.dev/icons?theme=dark&i=github",
+				link: "https://github.com/Allerito/Account_Manager",
+			}
+        ],
+		img: "https://cdn.discordapp.com/attachments/842649255608975360/1104529200284700753/AccountManager.png",
 	},
 ]
 

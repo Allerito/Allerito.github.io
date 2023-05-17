@@ -27,7 +27,6 @@ main{
     text-align: center;
     padding: 0 15%;
 }
-
 h1 {
     font-size: 400%;
     color: #fff;
@@ -40,6 +39,7 @@ h1 {
 }
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 video {
     position: fixed;
