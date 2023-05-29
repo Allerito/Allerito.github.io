@@ -54,7 +54,7 @@ const Projects = [
 				link: "https://github.com/Allerito/Account_Manager",
 			}
         ],
-		img: "https://cdn.discordapp.com/attachments/842649255608975360/1104529200284700753/AccountManager.png",
+		img: "https://media.discordapp.net/attachments/842649255608975360/1104529200284700753/AccountManager.png",
 	},
 ]
 

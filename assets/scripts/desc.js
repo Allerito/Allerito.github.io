@@ -1,10 +1,10 @@
 const desc = [
-	"I'm a very curious guy and I like to learn and challenge myself.",
-	"My hobbies are gaming, coding and improve myself.",
-	"I really like understanding how things work, but at the same time I love creating things for others to understand.",
-	"I'm convinced that creating is the best way to tell about yourself.",
-	"If you have suggestions to improve myself, please contact me.",
-	"Usually my code is a little buggy, but I'll update it until it works.",
+	"I'm very curious and I like to learn and challenge myself.",
+    "My hobbies are gaming, coding and improving myself.",
+    "I really like to understand how things work, but at the same time I love creating them for helping people to understand.",
+    "I'm convinced that creating is the best way to be known.",
+    "If you have any suggestions to improve my code, please contact me.",
+    "Usually my code is a little buggy, but I'll update it until it finally works.",
 ]
 
 const startPhrase = "Hey I'm Ruben Allera aka Allerito. ";
