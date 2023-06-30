@@ -43,10 +43,15 @@ const Projects = [
 		title: "Account Manager",
 		description: "An account manager application made in python, it allows to saving your accounts information on your local pc",
 		links: [
-            {
+            		{
 				name: "Python",
 				icon: "https://skillicons.dev/icons?theme=dark&i=py",
 				link: "https://docs.python.org/3/",
+			},
+			{
+				name: "Figma",
+				icon: "https://skillicons.dev/icons?theme=dark&i=figma",
+				link: "https://www.figma.com/",
 			},
 			{
 				name: "Download",
@@ -54,7 +59,7 @@ const Projects = [
 				link: "https://github.com/Allerito/Account_Manager",
 			}
         ],
-		img: "https://media.discordapp.net/attachments/842649255608975360/1104529200284700753/AccountManager.png",
+		img: "https://cdn.discordapp.com/attachments/842649255608975360/1115218895490523136/image.png",
 	},
 ]
 
