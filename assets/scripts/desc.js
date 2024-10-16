@@ -1,5 +1,5 @@
 const desc = [
-	"I'm very curious and I like to learn and challenge myself.",
+    "I'm very curious and I like to learn and challenge myself.",
     "My hobbies are gaming, coding and improving myself.",
     "I really like to understand how things work, but at the same time I love creating them for helping people to understand.",
     "I'm convinced that creating is the best way to be known.",
@@ -17,27 +17,27 @@ let toRotate = desc[index];
 let isDeleting = false;
 
 (function type() {
-	let speed = 40;
+    let speed = 40;
 
-	if (isDeleting) {
-		speed /= 2;
-	}
+    if (isDeleting) {
+        speed /= 2;
+    }
 
-	if (!isDeleting && txt === toRotate) {
-		speed = period;
-		isDeleting = true;
-	} else if (isDeleting && txt === "") {
-		isDeleting = false;
-		index++;
-		if (index >= desc.length) {
-			index = 0;
-		}
-		toRotate = desc[index];
-		speed = 500;
-	}else{
-		txt = isDeleting ? toRotate.substring(0, txt.length - 1) : toRotate.substring(0, txt.length + 1);
-		element.innerHTML = startPhrase + txt;
-	}
-	
-	setTimeout(type, speed);
+    if (!isDeleting && txt === toRotate) {
+        speed = period;
+        isDeleting = true;
+    } else if (isDeleting && txt === "") {
+        isDeleting = false;
+        index++;
+        if (index >= desc.length) {
+            index = 0;
+        }
+        toRotate = desc[index];
+        speed = 500;
+    }else{
+        txt = isDeleting ? toRotate.substring(0, txt.length - 1) : toRotate.substring(0, txt.length + 1);
+        element.innerHTML = startPhrase + txt;
+    }
+
+    setTimeout(type, speed);
 })();
