@@ -36,7 +36,7 @@ let isDeleting = false;
         speed = 500;
     }else{
         txt = isDeleting ? toRotate.substring(0, txt.length - 1) : toRotate.substring(0, txt.length + 1);
-        element.innerHTML = startPhrase + txt;
+        element.textContent = startPhrase + txt;
     }
 
     setTimeout(type, speed);

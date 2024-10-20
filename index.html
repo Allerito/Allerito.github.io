@@ -7,9 +7,9 @@
     <meta name="description" content="Allerito's website">
     <link rel="shortcut icon" href="assets/images/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/pipToggle.css">
     <link rel="stylesheet" href="assets/style/videocontrols.css">
     <script src="assets/scripts/desc.js" defer=""></script>
-    <script src="assets/scripts/projects.js" defer=""></script>
     <script src="assets/scripts/bgRandom.js" defer=""></script>
     <title>Allerito</title>
 </head>
@@ -121,16 +121,26 @@
             </div>
 
             <p>My projects:</p>
-            <div id="projects" class="icons">
-                <a>
-                    <img style="border-radius: 9px;" src="assets/images/AccountManagerIcon.png" title="Account Manager" onclick="showDesc('Account Manager')">
-                </a>
-                <a>
-                    <img style="border-radius: 9px;" src="assets/images/PasswordGeneratorIcon.png" title="Password Generator" onclick="showDesc('Password Generator')">
-                </a>
-                <a>
-                    <img src="assets/images/PrHevinia.png" title="Project Hevinia" onclick="showDesc('Project Hevinia')">
-                </a>
+            <div class="projects">
+                <div class="pr_card">
+                    <p class="title">Project Hevinia</p>
+                    <a href="https://github.com/LotoGames/ProjectHevinia">
+                        <img src="assets/images/PrHevinia.png">
+                    </a>
+                        <p>A fun platformer with simple 2D graphics and engaging gameplay</p>
+
+                        <div class="icons">
+                            <a href="https://learn.microsoft.com/en-us/dotnet/csharp/">
+                                <img src="https://skillicons.dev/icons?theme=dark&i=cs">
+                            </a>
+                            <a href="https://unity.com/">
+                                <img src="https://skillicons.dev/icons?theme=dark&i=unity">
+                            </a>
+                            <a href="https://figma.com/">
+                                <img src="https://skillicons.dev/icons?theme=dark&i=figma">
+                            </a>
+                        </div>
+                </div>
             </div>
 
             <p>Connect with me:</p>
@@ -145,15 +155,6 @@
                     <img src="https://skillicons.dev/icons?theme=dark&i=linkedin">
                 </a>
             </div>
-        </div>
-        <div id="popup">
-            <div>
-                <h2 id="prTitle"></h2>
-                <p id="prDesc"></p>
-                <div id="prLink"></div>
-            </div>
-
-            <img id="prImg">
         </div>
     </main>
 </body>
