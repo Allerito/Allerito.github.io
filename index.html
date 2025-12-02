@@ -1,161 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Allerito's website">
-    <link rel="shortcut icon" href="assets/images/logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="assets/style/style.css">
-    <link rel="stylesheet" href="assets/style/pipToggle.css">
-    <link rel="stylesheet" href="assets/style/videocontrols.css">
-    <script src="assets/scripts/desc.js" defer=""></script>
-    <script src="assets/scripts/bgRandom.js" defer=""></script>
-    <title>Allerito</title>
-</head>
-<body>
-    <video id="video" autoplay loop muted>
-        <source id="bg" src="assets/videos/bg.mp4" type="video/mp4">
-    </video>
-    <main>
-        <div class="bio">
-            <h1>Allerito</h1>
-            <p id="desc"></p>
-        </div>
-        <div class="other">
-            <p>Languages I know:</p>
-            <div class="icons">
-                <a href="https://docs.python.org/3/">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=py">
-                </a>
-                <a href="https://learn.microsoft.com/en-us/dotnet/csharp/">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=cs">
-                </a>
-                <a href="https://www.markdownguide.org/getting-started/">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=md">
-                </a>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=html">
-                </a>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=css">
-                </a>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=js">
-                </a>
-                <a href="https://www.php.net/docs.php">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=php">
-                </a>
-                <a href="https://www.mysql.com/it/">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=mysql">
-                </a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Allerito's website" />
+        <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="scripts/index.js" defer="" onload="initPage()"></script>
+        <title>Allerito</title>
+    </head>
+    <body>
+        <!--Header-->
+        <div class="taskbar-container">
+            <div class="nav-links">
+                <a href="#" class="nav-item active">Home</a>
+                <a href="#" class="nav-item">Projects</a>
+                <a href="#" class="nav-item">Jobs</a>
             </div>
 
-            <p>Tools I use:</p>
-            <div class="icons">
-                <a href="https://code.visualstudio.com/">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=vscode">
-                </a>
-                <a href="https://git-scm.com/">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=git">
-                </a>
-                <a href="https://about.gitlab.com/">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=gitlab">
-                </a>
-                <a href="https://azure.microsoft.com/it-it/products/devops">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=azure">
-                </a>
-                <a href="https://figma.com/">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=figma">
-                </a>
-                <a href="https://unity.com/">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=unity">
-                </a>
-                <a href="https://godotengine.org/">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=godot">
-                </a>
-                <a href="https://docs.microsoft.com/en-us/dotnet/">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=dotnet">
-                </a>
-                <a href="https://discord.js.org/">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=discordjs">
-                </a>
-                <a href="https://www.postman.com/">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=postman">
-                </a>
-            </div>
-
-            <p>Improving on:</p>
-            <div class="icons">
-                <a href="https://www.rust-lang.org/">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=rust">
-                </a>
-                <a href="https://v2.tauri.app/">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=tauri">
-                </a>
-                <a href="https://www.typescriptlang.org/docs/">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=ts">
-                </a>
-                <a href="https://docs.github.com/en/actions">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=githubactions">
-                </a>
-            </div>
-
-            <p>Things to learnImprovement:</p>
-            <div class="icons">
-                <a href="https://www.mongodb.com/">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=mongodb">
-                </a>
-                <a href="https://nodejs.org/">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=nodejs">
-                </a>
-                <a href="https://docs.oracle.com/en/java/">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=java">
-                </a>
-                <a href="https://docs.arduino.cc/">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=arduino">
-                </a>
-                <a href="https://devdocs.io/cpp/">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=cpp">
-                </a>
-            </div>
-
-            <p>My projects:</p>
-            <div class="projects">
-                <div class="pr_card">
-                    <p class="title">Project Hevinia</p>
-                    <a href="https://github.com/LotoGames/ProjectHevinia">
-                        <img src="assets/images/PrHevinia.png">
-                    </a>
-                        <p>A fun platformer with simple 2D graphics and engaging gameplay</p>
-
-                        <div class="icons">
-                            <a href="https://learn.microsoft.com/en-us/dotnet/csharp/">
-                                <img src="https://skillicons.dev/icons?theme=dark&i=cs">
-                            </a>
-                            <a href="https://unity.com/">
-                                <img src="https://skillicons.dev/icons?theme=dark&i=unity">
-                            </a>
-                            <a href="https://figma.com/">
-                                <img src="https://skillicons.dev/icons?theme=dark&i=figma">
-                            </a>
-                        </div>
-                </div>
-            </div>
-
-            <p>Connect with me:</p>
-            <div class="icons">
-                <a href="https://github.com/Allerito">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=github">
-                </a>
-                <a href="https://discord.com/users/413677992410349568">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=discord">
-                </a>
-                <a href="https://www.linkedin.com/in/rubenallera/">
-                    <img src="https://skillicons.dev/icons?theme=dark&i=linkedin">
-                </a>
+            <div class="datetime-container">
+                <div class="date" id="date"></div>
+                <div class="clock" id="clock"></div>
             </div>
         </div>
-    </main>
-</body>
+
+        <!--Main Content-->
+        <div class="main-content">
+            <div></div>
+        </div>
+    </body>
 </html>
