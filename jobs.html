@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Allerito's website" />
+        <link rel="shortcut icon" href="images/logo.webp" type="image/x-icon" />
+        <link rel="stylesheet" href="styles/base.css" />
+        <link rel="stylesheet" href="styles/index.css" />
+        <script src="scripts/taskbar.js" defer="" type="module"></script>
+        <script src="scripts/description.js" defer="" type="module"></script>
+        <script src="scripts/footer.js" defer="" type="module"></script>
+        <title>Allerito</title>
+    </head>
+    <body>
+        <!--Header-->
+        <div class="taskbar-container">
+            <div class="nav-links">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="projects.html" class="nav-item">Projects</a>
+                <a href="jobs.html" class="nav-item active">Jobs</a>
+            </div>
+
+            <div class="datetime-container">
+                <div class="date" id="date"></div>
+                <div class="clock" id="clock"></div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="card current-project">
+                <h3>Greenify</h3>
+                <div class="project-layout">
+                    <a
+                        class="project-logo"
+                        href="https://github.com/Allerito/Greenify"
+                    >
+                        <img
+                            src="images/projects/greenify.webp"
+                            alt="Greenify Project Image"
+                        />
+                    </a>
+                    <div class="project-info">
+                        High-performance management for green energy assets.
+                        Built for speed and security, it aggregates data to
+                        optimize yield while providing predictive analytics for
+                        both earnings and hardware health.
+                    </div>
+                    <div class="project-icons">
+                        <a class="tech-box" href="https://go.dev/">
+                            <img src="images/tech/GoLang.svg" alt="Go lang" />
+                        </a>
+                        <a class="tech-box" href="https://www.postgresql.org/">
+                            <img
+                                src="images/tech/PostgreSQL.svg"
+                                alt="PostgreSQL"
+                            />
+                        </a>
+                        <a class="tech-box" href="https://www.docker.com/">
+                            <img src="images/tech/Docker.svg" alt="Docker" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container" />
+    </body>
+</html>

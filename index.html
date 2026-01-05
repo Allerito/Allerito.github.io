@@ -6,17 +6,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Allerito's website" />
         <link rel="shortcut icon" href="images/logo.webp" type="image/x-icon" />
-        <link rel="stylesheet" href="style.css" />
-        <script src="scripts/index.js" defer="" onload="initPage()"></script>
+        <link rel="stylesheet" href="styles/base.css" />
+        <link rel="stylesheet" href="styles/index.css" />
+        <script src="scripts/taskbar.js" defer="" type="module"></script>
+        <script src="scripts/description.js" defer="" type="module"></script>
+        <script src="scripts/footer.js" defer="" type="module"></script>
         <title>Allerito</title>
     </head>
     <body>
         <!--Header-->
         <div class="taskbar-container">
             <div class="nav-links">
-                <a href="#" class="nav-item active">Home</a>
-                <a href="#" class="nav-item">Projects</a>
-                <a href="#" class="nav-item">Jobs</a>
+                <a href="index.html" class="nav-item active">Home</a>
+                <a href="projects.html" class="nav-item">Projects</a>
+                <a href="jobs.html" class="nav-item">Jobs</a>
             </div>
 
             <div class="datetime-container">
@@ -25,16 +28,182 @@
             </div>
         </div>
 
-        <!--Main Content-->
-        <div class="dashboard-container">
-            <div class="card" id="description">Description</div>
-            <img
-                class="profile-pic"
-                src="images/profile.webp"
-                alt="Profile Picture"
-            />
-        </div>
+        <div class="content-wrapper">
+            <!--Dashboard-->
+            <div class="dashboard-container">
+                <div class="card" id="description"></div>
+                <img
+                    class="profile-pic"
+                    src="images/profile.webp"
+                    alt="Profile Picture"
+                />
+            </div>
 
-        <div class="footer-container">Contact me:</div>
+            <!--Tech stuff-->
+            <div class="tech-container">
+                <div class="skill-group">
+                    <h3>My skills</h3>
+                    <div class="flex-tech">
+                        <a class="tech-box" href="https://www.python.org/">
+                            <img src="images/tech/Python.svg" alt="Python" />
+                        </a>
+                        <a
+                            class="tech-box"
+                            href="https://learn.microsoft.com/en-us/dotnet/csharp/"
+                        >
+                            <img src="images/tech/Csharp.svg" alt="C sharp" />
+                        </a>
+                        <a
+                            class="tech-box"
+                            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                        >
+                            <img src="images/tech/HTML.svg" alt="HTML" />
+                        </a>
+                        <a
+                            class="tech-box"
+                            href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                        >
+                            <img src="images/tech/CSS.svg" alt="CSS" />
+                        </a>
+                        <a
+                            class="tech-box"
+                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                        >
+                            <img
+                                src="images/tech/JavaScript.svg"
+                                alt="JavaScript"
+                            />
+                        </a>
+                        <a
+                            class="tech-box"
+                            href="https://www.markdownguide.org"
+                        >
+                            <img
+                                src="images/tech/Markdown.svg"
+                                alt="Markdown"
+                            />
+                        </a>
+                        <a class="tech-box" href="https://www.mysql.com/">
+                            <img src="images/tech/MySQL.svg" alt="MySQL" />
+                        </a>
+                        <a
+                            class="tech-box"
+                            href="https://code.visualstudio.com/"
+                        >
+                            <img src="images/tech/VSCode.svg" alt="VSCode" />
+                        </a>
+                        <a class="tech-box" href="https://git-scm.com/">
+                            <img src="images/tech/Git.svg" alt="Git" />
+                        </a>
+                        <a class="tech-box" href="https://github.com/">
+                            <img src="images/tech/GitHub.svg" alt="GitHub" />
+                        </a>
+                        <a class="tech-box" href="https://about.gitlab.com/">
+                            <img src="images/tech/GitLab.svg" alt="GitLab" />
+                        </a>
+                        <a
+                            class="tech-box"
+                            href="https://azure.microsoft.com/en-us/products/devops"
+                        >
+                            <img src="images/tech/Azure.svg" alt="Azure" />
+                        </a>
+                        <a class="tech-box" href="https://figma.com/">
+                            <img src="images/tech/Figma.svg" alt="Figma" />
+                        </a>
+                        <a class="tech-box" href="https://unity.com/">
+                            <img src="images/tech/Unity.svg" alt="Unity" />
+                        </a>
+                        <a class="tech-box" href="https://godotengine.org/">
+                            <img src="images/tech/Godot.svg" alt="Godot" />
+                        </a>
+                        <a
+                            class="tech-box"
+                            href="https://dotnet.microsoft.com/en-us/"
+                        >
+                            <img src="images/tech/DotNet.svg" alt="DotNet" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Learning</h3>
+                    <div class="flex-tech">
+                        <a class="tech-box" href="https://www.docker.com/">
+                            <img src="images/tech/Docker.svg" alt="Docker" />
+                        </a>
+                        <a class="tech-box" href="https://go.dev/">
+                            <img src="images/tech/GoLang.svg" alt="Go lang" />
+                        </a>
+                        <a class="tech-box" href="https://www.postgresql.org/">
+                            <img
+                                src="images/tech/PostgreSQL.svg"
+                                alt="PostgreSQL"
+                            />
+                        </a>
+                        <a
+                            class="tech-box"
+                            href="https://docs.github.com/en/actions"
+                        >
+                            <img
+                                src="images/tech/GitHubActions.svg"
+                                alt="GitHub Actions"
+                            />
+                        </a>
+
+                        <a class="tech-box" href="https://rust-lang.org/">
+                            <img src="images/tech/Rust.svg" alt="Rust" />
+                        </a>
+                        <a class="tech-box" href="https://www.mongodb.com/">
+                            <img src="images/tech/MongoDB.svg" alt="MongoDB" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card current-project">
+                    <h3>Greenify</h3>
+                    <div class="project-layout">
+                        <a
+                            class="project-logo"
+                            href="https://github.com/Allerito/Greenify"
+                        >
+                            <img
+                                src="images/projects/greenify.webp"
+                                alt="Greenify Project Image"
+                            />
+                        </a>
+                        <div class="project-info">
+                            High-performance management for green energy assets.
+                            Built for speed and security, it aggregates data to
+                            optimize yield while providing predictive analytics
+                            for both earnings and hardware health.
+                        </div>
+                        <div class="project-icons">
+                            <a class="tech-box" href="https://go.dev/">
+                                <img
+                                    src="images/tech/GoLang.svg"
+                                    alt="Go lang"
+                                />
+                            </a>
+                            <a
+                                class="tech-box"
+                                href="https://www.postgresql.org/"
+                            >
+                                <img
+                                    src="images/tech/PostgreSQL.svg"
+                                    alt="PostgreSQL"
+                                />
+                            </a>
+                            <a class="tech-box" href="https://www.docker.com/">
+                                <img
+                                    src="images/tech/Docker.svg"
+                                    alt="Docker"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container"></div>
     </body>
 </html>

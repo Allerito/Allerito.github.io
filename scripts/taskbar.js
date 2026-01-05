@@ -1,12 +1,4 @@
 /**
- * Initialize the page by setting up the date and clock elements.
- */
-function initPage() {
-  dateUpdater();
-  clockUpdater();
-}
-
-/**
  * Recursively updates the date element every second.
  */
 function dateUpdater() {
@@ -37,3 +29,6 @@ function clockUpdater() {
 
   setTimeout(clockUpdater, 1000);
 }
+
+dateUpdater();
+clockUpdater();
