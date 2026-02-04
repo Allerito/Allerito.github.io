@@ -19,6 +19,7 @@ function initTaskbar() {
   if (taskbarContainer) {
     taskbarContainer.innerHTML = taskbarContent;
 
+    var pageFound = false;
     const navLinks = document.getElementById("nav-bar").children;
     for (let i = 0; i < navLinks.length; i++) {
       if (
@@ -26,7 +27,11 @@ function initTaskbar() {
         window.location.pathname.split("/").reverse()[0]
       ) {
         navLinks[i].classList.add("active");
+        pageFound = true;
       }
+    }
+    if (!pageFound) {
+      navLinks[0].classList.add("active");
     }
   }
 }
