@@ -19,37 +19,39 @@ const startPhrase = "Hey I'm Ruben Allera aka Allerito. ";
 const period = 2000;
 const element = document.getElementById("description");
 
-let descriptionIndex = Math.floor(Math.random() * descriptions.length);
-let txt = "";
-let toRotate = descriptions[descriptionIndex];
-let isDeleting = false;
+if (element) {
+  let descriptionIndex = Math.floor(Math.random() * descriptions.length);
+  let txt = "";
+  let toRotate = descriptions[descriptionIndex];
+  let isDeleting = false;
 
-function descriptionWriter() {
-  let speed = 40; // writing speed
+  function descriptionWriter() {
+    let speed = 40; // writing speed
 
-  if (isDeleting) {
-    speed /= 2; // deleting speed
-  }
-
-  if (!isDeleting && txt === toRotate) {
-    speed = period;
-    isDeleting = true;
-  } else if (isDeleting && txt === "") {
-    isDeleting = false;
-    descriptionIndex++;
-    if (descriptionIndex >= descriptions.length) {
-      descriptionIndex = 0;
+    if (isDeleting) {
+      speed /= 2; // deleting speed
     }
-    toRotate = descriptions[descriptionIndex];
-    speed = 500;
-  } else {
-    txt = isDeleting
-      ? toRotate.substring(0, txt.length - 1)
-      : toRotate.substring(0, txt.length + 1);
-    element.textContent = startPhrase + txt;
+
+    if (!isDeleting && txt === toRotate) {
+      speed = period;
+      isDeleting = true;
+    } else if (isDeleting && txt === "") {
+      isDeleting = false;
+      descriptionIndex++;
+      if (descriptionIndex >= descriptions.length) {
+        descriptionIndex = 0;
+      }
+      toRotate = descriptions[descriptionIndex];
+      speed = 500;
+    } else {
+      txt = isDeleting
+        ? toRotate.substring(0, txt.length - 1)
+        : toRotate.substring(0, txt.length + 1);
+      element.textContent = startPhrase + txt;
+    }
+
+    setTimeout(descriptionWriter, speed);
   }
 
-  setTimeout(descriptionWriter, speed);
+  descriptionWriter();
 }
-
-descriptionWriter();

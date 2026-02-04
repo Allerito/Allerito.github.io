@@ -7,46 +7,31 @@
         <meta name="description" content="Allerito's website" />
         <link rel="shortcut icon" href="images/logo.webp" type="image/x-icon" />
         <link rel="stylesheet" href="styles/base.css" />
-        <link rel="stylesheet" href="styles/projects.css" />
+        <link rel="stylesheet" href="styles/project-jobs.css" />
         <script src="scripts/taskbar.js" defer="" type="module"></script>
         <script src="scripts/description.js" defer="" type="module"></script>
         <script src="scripts/footer.js" defer="" type="module"></script>
         <title>Allerito</title>
     </head>
     <body>
-        <!--Header-->
-        <div class="taskbar-container">
-            <div class="nav-links">
-                <a href="index.html" class="nav-item">Home</a>
-                <a href="projects.html" class="nav-item active">Projects</a>
-                <a href="jobs.html" class="nav-item">Jobs</a>
-            </div>
-
-            <div class="datetime-container">
-                <div class="date" id="date"></div>
-                <div class="clock" id="clock"></div>
-            </div>
-        </div>
+        <div class="taskbar-container"></div>
 
         <div class="content-wrapper">
-            <div class="card current-project">
+            <div class="card current">
                 <h3>Greenify</h3>
-                <div class="project-layout">
-                    <a
-                        class="project-logo"
-                        href="https://github.com/Allerito/Greenify"
-                    >
+                <div class="current-layout">
+                    <a class="logo" href="https://github.com/Allerito/Greenify">
                         <img
                             src="images/projects/greenify.webp"
                             alt="Greenify Project Image"
                         />
                     </a>
-                    <div class="project-info">
+                    <div class="info">
                         High-performance management for green energy assets.
                         Built for speed and security, it aggregates data to
                         optimize yield while providing predictive analytics.
                     </div>
-                    <div class="project-icons">
+                    <div class="icons">
                         <a class="tech-box" href="https://go.dev/"
                             ><img src="images/tech/GoLang.svg" alt="Go lang"
                         /></a>
@@ -62,84 +47,25 @@
                 </div>
             </div>
 
-            <div class="old-projects-container">
-                <div class="card old-project">
+            <div class="old-container">
+                <div class="card old">
                     <h3>Hevinia</h3>
-                    <div class="project-layout-vertical">
-                        <a class="project-logo" href="#">
+                    <div class="old-layout">
+                        <a
+                            class="logo"
+                            href="https://github.com/LotoGames/ProjectHevinia"
+                        >
                             <img
                                 src="images/projects/prHevinia.webp"
                                 alt="Hevinia"
                             />
                         </a>
-                        <div class="project-info">
+                        <div class="info">
                             This is a simple 2D platformer game. Explore a small
                             world and defeat the five bosses located in the five
                             cities to win.
                         </div>
-                        <div class="project-icons">
-                            <a
-                                class="tech-box"
-                                href="https://learn.microsoft.com/en-us/dotnet/csharp/"
-                            >
-                                <img
-                                    src="images/tech/Csharp.svg"
-                                    alt="C sharp"
-                                />
-                            </a>
-                            <a class="tech-box" href="https://unity.com/">
-                                <img src="images/tech/Unity.svg" alt="Unity" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card old-project">
-                    <h3>Hevinia</h3>
-                    <div class="project-layout-vertical">
-                        <a class="project-logo" href="#">
-                            <img
-                                src="images/projects/prHevinia.webp"
-                                alt="Hevinia"
-                            />
-                        </a>
-                        <div class="project-info">
-                            This is a simple 2D platformer game. Explore a small
-                            world and defeat the five bosses located in the five
-                            cities to win.
-                        </div>
-                        <div class="project-icons">
-                            <a
-                                class="tech-box"
-                                href="https://learn.microsoft.com/en-us/dotnet/csharp/"
-                            >
-                                <img
-                                    src="images/tech/Csharp.svg"
-                                    alt="C sharp"
-                                />
-                            </a>
-                            <a class="tech-box" href="https://unity.com/">
-                                <img src="images/tech/Unity.svg" alt="Unity" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card old-project">
-                    <h3>Hevinia</h3>
-                    <div class="project-layout-vertical">
-                        <a class="project-logo" href="#">
-                            <img
-                                src="images/projects/prHevinia.webp"
-                                alt="Hevinia"
-                            />
-                        </a>
-                        <div class="project-info">
-                            This is a simple 2D platformer game. Explore a small
-                            world and defeat the five bosses located in the five
-                            cities to win.
-                        </div>
-                        <div class="project-icons">
+                        <div class="icons">
                             <a
                                 class="tech-box"
                                 href="https://learn.microsoft.com/en-us/dotnet/csharp/"
@@ -157,6 +83,7 @@
                 </div>
             </div>
         </div>
+
         <div class="footer-container"></div>
     </body>
 </html>

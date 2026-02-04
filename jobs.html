@@ -7,43 +7,28 @@
         <meta name="description" content="Allerito's website" />
         <link rel="shortcut icon" href="images/logo.webp" type="image/x-icon" />
         <link rel="stylesheet" href="styles/base.css" />
-        <link rel="stylesheet" href="styles/job.css" />
+        <link rel="stylesheet" href="styles/project-jobs.css" />
         <script src="scripts/taskbar.js" defer="" type="module"></script>
         <script src="scripts/description.js" defer="" type="module"></script>
         <script src="scripts/footer.js" defer="" type="module"></script>
         <title>Allerito</title>
     </head>
     <body>
-        <!--Header-->
-        <div class="taskbar-container">
-            <div class="nav-links">
-                <a href="index.html" class="nav-item">Home</a>
-                <a href="projects.html" class="nav-item">Projects</a>
-                <a href="jobs.html" class="nav-item active">Jobs</a>
-            </div>
-
-            <div class="datetime-container">
-                <div class="date" id="date"></div>
-                <div class="clock" id="clock"></div>
-            </div>
-        </div>
+        <div class="taskbar-container"></div>
 
         <div class="content-wrapper">
-            <div class="card current-job">
+            <div class="card current">
                 <h3>DDX</h3>
                 <p class="work-time">2023-current</p>
-                <div class="job-layout">
-                    <a
-                        class="job-logo"
-                        href="https://github.com/Allerito/Greenify"
-                    >
+                <div class="current-layout">
+                    <a class="logo" href="https://www.ddxgroup.com">
                         <img src="images/jobs/ddx.webp" alt="DDX job Image" />
                     </a>
-                    <div class="job-info">
+                    <div class="info">
                         Developer of post-processors for EasyWood, a wood
                         software suite that is both CAD and CAM enabled.
                     </div>
-                    <div class="job-icons">
+                    <div class="icons">
                         <a class="tech-box" href="https://www.python.org/">
                             <img src="images/tech/Python.svg" alt="Python" />
                         </a>
@@ -60,8 +45,9 @@
                 </div>
             </div>
 
-            <div class="old-jobs-container"></div>
+            <div class="old-container"></div>
         </div>
+
         <div class="footer-container"></div>
     </body>
 </html>

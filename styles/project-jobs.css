@@ -7,7 +7,7 @@
     flex: 1;
 }
 
-.current-project {
+.current {
     width: 100%;
     max-width: 50%;
     display: flex;
@@ -18,27 +18,39 @@
     padding: 30px;
 }
 
-.current-project h3 {
+.current h3 {
     font-size: 1.3em;
     margin-bottom: 15px;
     color: #a6e3a1;
 }
 
-.project-layout {
+.work-time {
+    color: #888;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.current:hover,
+.old:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.current-layout {
     display: flex;
     gap: 20px;
     align-items: flex-start;
     transition: transform 0.2s ease;
 }
 
-.project-logo {
+.logo {
     max-width: 100px;
     max-height: 100px;
     background-color: transparent;
     transition: transform 0.2s ease;
 }
 
-.project-logo img {
+.logo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -46,13 +58,18 @@
     aspect-ratio: 1 / 1;
 }
 
-.project-info {
+.logo:hover,
+.tech-box:hover {
+    transform: scale(1.1);
+}
+
+.info {
     flex: 1;
     font-size: 1.1em;
     line-height: 1.6;
 }
 
-.project-icons {
+.icons {
     display: flex;
     gap: 10px;
     margin-top: 10px;
@@ -73,21 +90,16 @@
     object-fit: contain;
 }
 
-.tech-box:hover,
-.project-logo:hover {
-    transform: scale(1.1);
-}
-
-.old-projects-container {
+.old-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 25px;
     width: 100%;
     max-width: 70%;
     justify-content: center;
 }
 
-.old-project {
+.old {
     padding: 20px;
     flex-direction: column;
     transition:
@@ -96,22 +108,41 @@
     height: 100%;
 }
 
-.current-project:hover,
-.old-project:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-.old-project h3 {
+.old h3 {
     color: #f38ba8;
     margin-bottom: 15px;
     font-size: 1.3em;
 }
 
-.project-layout-vertical {
+.old-layout {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
     flex: 1;
+}
+
+@media (max-width: 900px) {
+    .current {
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .current-layout {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+
+    .old-container {
+        max-width: 100%;
+    }
 }
